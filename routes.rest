@@ -1,0 +1,29 @@
+POST http://localhost:4000/api/auth/signup
+Content-Type: application/json
+
+{
+  "fullName": "Icyi Iddy",
+  "email": "icyiiddy@gmail.com",
+  "password": "Pass1234?"
+}
+
+###
+
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "icyiiddy@gmail.com",
+  "password": "Pass123"
+}
+
+###
+
+PUT http://localhost:4000/api/auth/reset-password
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImljeWlpZGR5QGdtYWlsLmNvbSIsImlhdCI6MTYxMTI1NzgwOSwiZXhwIjoxNjExMzQ0MjA5fQ.97aMY5MmFqRq6hil9ohgpwyGO8ruwSPhstOA9wD__Z0
+
+{
+  "password": "Pass123",
+  "confirmPassword": "Pass123"
+}

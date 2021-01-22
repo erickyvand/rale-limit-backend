@@ -6,6 +6,10 @@ class InstanceService {
 	static findOneByModel(model, property) {
 		return model.findOne(property);
 	}
+
+	static updateOneByModel(model, property, attribute) {
+		return model.updateOne(property, attribute);
+	}
 }
 
 export default InstanceService;
